@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Arbeidskrav 2: HTML, CSS og JavaScript-oppfriskning</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1></h1>
+        </header>
+        <div id="tabMenu">
+            <ul id=" tabs">
+            </ul>
+            <div id="tabContent">
+            </div>
+        </div>
+        
+    </div>
+    <script src="ressurser.js"></script>
+    <script>
+        resources.forEach(resource, index) {
+            const tab = document.createElement("li");
+                    tab.innerHTML = `<a href="#${resource.category}">${resource.category}</a>`;
+                    tabs.appendChild(tab);
+        const content = document.createElement("div");
+        content.id = resource.category;
+        content.innerHTML = `<a href="${source.url}">{source.title}</a>`;
+        sourceList.appendChild(sourceItem)
+    }
+
+
+
+
+    </script>
+    
+</body>
+</html>
