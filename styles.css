@@ -1,6 +1,9 @@
+/* Fonter her importeres google fonten Montserrat med forskjelige font skrifttype */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Farge koder*/
+/* Farge koder*/ /**/
+
 :root {
     --dark-blue: #2A324B;
     --light-blue: #58699D;
@@ -18,25 +21,27 @@ body {
     padding-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
-    background-color: rgb(238, 234, 234);
+    background-color: var(--light-gray)
 }
 
+/* div.container  som inneholder nettsidens innhold */
 div.container {
     width: 60%;
-    max-width: var(--maxwidth);
+    max-width: var(--maxwidth); 
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     padding-top: 3rem;
 }
-
+/* Header elementet , inkludert av felx dispaly for å justre*/
 header {
     display: flex;
     justify-content: space-between;
     padding: 2rem;  
 }
-
+/* fanemeny*/
 #tabMenu {
+    display:block;
     max-width: fit-content;
     display:flow-root;
     flex-wrap: wrap;
@@ -47,22 +52,22 @@ header {
     width: 100%;
     list-style-type: none;
     margin: 0 auto;
-    padding: 0;
+    padding:0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 
-    
 }
     
 #tabs li a {
     color: var(--white);
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 2rem 1.5rem;
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 18px;
     background-color:var(--dark-blue);
+    font-weight: bold; 
 }
 
 #tabs li.active a {
@@ -72,14 +77,8 @@ header {
 } 
     
 #tabContent {
-    width: 100%;
-    max-width: var(--maxwidth);
-    margin: 0 auto;
     background-color: var(--white);
-    border-top: 5px solid var(--blue);
-    border-right: 1px solid var(--lightgray);
-    border-left: 1px solid var(--lightgray);
-    border-bottom: 1px solid var(--lightgray);
+
 }
     
 #tabContent > div {
@@ -92,26 +91,27 @@ header {
 }
 
 #tabContent h2 {
+    font-weight: bold;
     color: var(--dark-blue);
-    margin: 0;
+    margin-top: 5cap;
 }
     
 #tabContent p {
-    font-size: 15px ;
-    color: var(--darkgray);
-    line-height: 1.5;
+    font-size: 18px ;
+    color: var(--dark-blue);
+    line-height: 10;
 }
 
 #tabContent ul {
-    margin: 10px 0;
-    padding: 0 17px;
-    font-size: 15px;
-    color: var(--darkgray);
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--dark-blue);
 }
 
 #tabContent ul li a {
     transition: all 0.2s ease-in-out;
-    color: var(--blue);
+    color: var(--light-blue);
 }
 
 #tabContent ul li a:hover {
