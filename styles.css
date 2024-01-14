@@ -9,13 +9,14 @@
     --light-blue: #58699D;
     --light-gray: #E1E5EE;
     --white: #fff;
-    --rootsize: 20px;
+    --rootsize: 18px;
+    font-family: Montserrat;
 }
 
 /* Setter generelle stiler for hele nettsiden*/
 
 body {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat' 'Regular 400';
     font-size: var(--rootsize);
     margin-top: 0;
     padding-top: 0;
@@ -46,15 +47,18 @@ header {
     display:flow-root;
     flex-wrap: wrap;
     padding-top: 5rem;
+
 }
     
 #tabs {
     width: 100%;
     list-style-type: none;
-    margin: 0 auto;
-    padding:0;
+    margin: 1px;
+    padding: 0;
     display: flex;
-    flex-wrap:wrap;
+    justify-content: space-between;
+    
+    
 
 }
     
@@ -65,7 +69,6 @@ header {
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
-    margin-right: 18px;
     background-color:var(--dark-blue);
     font-weight: bold; 
 }
@@ -78,6 +81,7 @@ header {
     
 #tabContent {
     background-color: var(--white);
+    justify-items: center;
 
 }
     
@@ -93,13 +97,16 @@ header {
 #tabContent h2 {
     font-weight: bold;
     color: var(--dark-blue);
-    margin-top: 5cap;
+    margin-top: 2cap;
 }
     
 #tabContent p {
-    font-size: 18px ;
+    font-size: 12px ;
     color: var(--dark-blue);
-    line-height: 10;
+    line-height: 1.5;
+    font-style: normal;
+    font-size-adjust: var(--rootsize);
+    font-weight: bold;
 }
 
 #tabContent ul {
