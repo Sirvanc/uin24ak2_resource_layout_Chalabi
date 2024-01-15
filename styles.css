@@ -25,69 +25,55 @@ body {
     background-color: var(--light-gray)
 }
 
-/* div.container  som inneholder nettsidens innhold */
+/* div.container som inneholder nettsidens innhold */
 div.container {
-    width: 60%;
+    width: 80%;
     max-width: var(--maxwidth); 
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    padding-top: 3rem;
+    padding-top: 10rem;
 }
-/* Header elementet , inkludert av felx dispaly for å justre*/
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;  
-}
+
 /* fanemeny*/
-#tabMenu {
-    display:block;
-    max-width: fit-content;
-    display:flow-root;
-    flex-wrap: wrap;
-    padding-top: 5rem;
-
-}
-    
 #tabs {
-    width: 100%;
-    list-style-type: none;
-    margin: 1px;
-    padding: 0;
     display: flex;
     justify-content: space-between;
-    
+    margin: 0%;
+    padding: 0px;
     
 
 }
-    
+
 #tabs li a {
     color: var(--white);
     text-decoration: none;
-    padding: 2rem 1.5rem;
-    display: inline-block;
+    padding: 2rem 5rem;
+    display: flex;
     text-transform: uppercase;
     text-align: center;
     background-color:var(--dark-blue);
     font-weight: bold; 
 }
+    
+
 
 #tabs li.active a {
     background-color: var(--white);
-    border-color: var(--white);
     color: var(--blue);
+    
 } 
     
 #tabContent {
     background-color: var(--white);
     justify-items: center;
+    box-sizing: border-box;
 
 }
     
 #tabContent > div {
     display: none;
-    padding: 20px;
+    padding: 10px;
 }
     
 #tabContent > div.active {
@@ -101,12 +87,16 @@ header {
 }
     
 #tabContent p {
-    font-size: 12px ;
+    font-size: 18px ;
     color: var(--dark-blue);
     line-height: 1.5;
     font-style: normal;
-    font-size-adjust: var(--rootsize);
     font-weight: bold;
+    clear: both;
+    display: inline-block;
+    margin-right:auto
+    
+
 }
 
 #tabContent ul {
