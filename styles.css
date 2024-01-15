@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Farge koder*/ /**/
+/* Farge koder av fargevariabler*/ /**/
 
 :root {
     --dark-blue: #2A324B;
@@ -35,25 +35,30 @@ div.container {
     padding-top: 10rem;
 }
 
-/* fanemeny*/
+/* fanemeny/ navbar*/
 #tabs {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    list-style-type: none;
+    margin-left:1rem;
+    margin-right:1rem;
     margin: 0px;
     padding: 0px;
 
 }
 
+/*stiler for linkene i listeelemnet i fanemenyinnholdet ( tab Content (li,h2,p,ul)*/
+
 #tabs li a {
     color: var(--white);
     text-decoration: none;
-    padding: 2rem 5rem;
+    padding: 2rem 4.5rem;
     display: flex;
     text-transform: uppercase;
     text-align: center;
     background-color:var(--dark-blue);
-    font-weight: bold; 
+    font-weight: bold;
 }
     
 
@@ -89,14 +94,13 @@ div.container {
 }
     
 #tabContent p {
-    font-size: 18px ;
     color: var(--dark-blue);
     line-height: 1.5;
-    font-style: normal;
-    font-weight: bold;
     display: inline-block;
-    margin-inline-start: 3cap;
-    
+    margin-inline-start: 4cap;
+    margin-inline-end: 4cap;
+    font-size: x-large;
+    font-weight:500;    
 
 }
 
