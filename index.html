@@ -9,17 +9,21 @@
     
 </head>
 <body>
-    <div class="container">
+    <div class="container"> <!--Dette er en kontainer som inneholder fanemenyen og innholdet-->
         <div id="tabMenu">
-            <ul id="tabs">
+            <ul id="tabs"> <!--sortet liste med in-en "tabs"-->
             </ul>
             <div id="tabContent">
             </div>
         </div>
-        <script src="ressurser.js"></script>
+        <script src="ressurser.js"></script> <!-- Lenke til javaScript fil ressuser.js-->
     <script>
-        resources.forEach(function(resource, index) {
-            const tab = document.createElement("li");
+
+
+        // Løkke som går gjennom hvert element i arryet ressuser
+        resources.forEach(function(resource, index) { 
+            // Dette  oppretter et li-elment for navmenyen basert på hver ressuskategori 
+            const tab = document.createElement("li"); 
                     tab.innerHTML = `<a href="#${resource.category}">${resource.category}</a>`;
                     tabs.appendChild(tab);
 
