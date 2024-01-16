@@ -16,7 +16,7 @@
 /* Setter generelle stiler for hele nettsiden*/
 
 body {
-    font-family: 'Montserrat' 'Regular 400';
+    font-family: 'Montserrat' 'Regular 300';
     font-size: var(--rootsize);
     margin-top: 0;
     padding-top: 0;
@@ -88,19 +88,19 @@ div.container {
 
 #tabContent h2 {
     font-weight: bold;
-    color: var(--dark-blue);
+    color:var(--dark-blue);
     margin-top: 4cap;
-    margin-inline-start: 2cap;
+    margin-inline-start: 4cap;
 }
     
 #tabContent p {
-    color: var(--dark-blue);
+    color: black;
     line-height: 1.5;
     display: inline-block;
     margin-inline-start: 4cap;
     margin-inline-end: 4cap;
     font-size: x-large;
-    font-weight:500;    
+    font: weight 5px;    
 
 }
 
