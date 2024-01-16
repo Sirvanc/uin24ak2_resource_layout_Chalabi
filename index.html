@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
     <title>Arbeidskrav 2: HTML, CSS og JavaScript-oppfriskning</title>
     
 </head>
@@ -26,21 +26,21 @@
             const tab = document.createElement("li"); 
                     tab.innerHTML = `<a href="#${resource.category}">${resource.category}</a>`;
                     tabs.appendChild(tab);
-
+        //Dette oppretter et divelement for menyinnholdet basert på hver ressuskategori inkluder (h2 , (p) og 
+        // en liste med kilder (ul)
         const content = document.createElement("div");
         content.id = resource.category;
         content.innerHTML = `<h2>${resource.category}</h2><p>${resource.text}</p>`;
         const sourcesList = document.createElement("ul");
-
+        //Denne  løkken går gjennom hver kilde i ressrsen og oppretter listeelemet med lenke for hver kilde
         resource.sources.forEach(function (source) {
                 const sourceItem = document.createElement("li");
                 sourceItem.innerHTML = `<a href="${source.url}">${source.title}</a>`;
                 sourcesList.appendChild(sourceItem);
             })
-
             content.appendChild(sourcesList);
             tabContent.appendChild(content);
-
+            //Denne legger til et klikk-arrangement for fane menyen slik at når en fane klikkes blir den og tilhørende innhold aktivert
             tab.addEventListener("click", function () {
                 const activeTabs = tabMenu.querySelectorAll(".active");
                 activeTabs.forEach(function (activeTab) {
@@ -49,12 +49,12 @@
                 tab.classList.add("active");
                 content.classList.add("active");
             })
-
+            //Dette aktiverer den første fanen og tilhørende innhold aktivert.
             if (index === 0) {
                 tab.classList.add("active");
                 content.classList.add("active");
             }
-        })
+        }) //avslutter løkken for 'resources'
             
 
     </script>
