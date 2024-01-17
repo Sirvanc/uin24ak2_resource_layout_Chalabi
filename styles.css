@@ -87,26 +87,24 @@ div.container {
 }
 
 #tabContent h2 {
-    font-weight: bold;
+    text-transform: uppercase;
     color:var(--dark-blue);
     margin-top: 4cap;
-    margin-inline-start: 4cap;
+    margin-inline-start: 3cap;
+
 }
     
 #tabContent p {
     color: black;
-    line-height: 1.5;
+    line-height: 2;
     display: inline-block;
     margin-inline-start: 4cap;
     margin-inline-end: 4cap;
-    font-size: x-large;
-    font: weight 5px;    
+    font-weight:normal
 
 }
 
 #tabContent ul {
-    font-size: 18px;
-    color: var(--dark-blue);
     margin-inline-start: 2cap;
 }
 
