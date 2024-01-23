@@ -60,8 +60,6 @@ div.container {
     background-color:var(--dark-blue);
     font-weight: bold;
 }
-    
-
 
 #tabs li.active a {
     background-color: var(--white);
