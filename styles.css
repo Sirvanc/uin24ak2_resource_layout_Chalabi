@@ -88,7 +88,7 @@ div.container {
     text-transform: uppercase;
     color:var(--dark-blue);
     margin-top: 4cap;
-    margin-inline-start: 3cap;
+    margin-inline-start: 2.5cap;
 
 }
     
@@ -98,12 +98,12 @@ div.container {
     display: inline-block;
     margin-inline-start: 4cap;
     margin-inline-end: 4cap;
-    font-weight:normal
+    font: weight 30px;
 
 }
 
 #tabContent ul {
-    margin-inline-start: 2cap;
+    margin-inline-start: 5cap;
 }
 
 #tabContent ul li a {
